@@ -1,4 +1,4 @@
-# dynamic_wallpaper.py
+# change_wallpaper.py
 ----------
 This is a really small and simple script to automatically change your wallpaper.
 
