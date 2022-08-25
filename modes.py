@@ -19,7 +19,7 @@ global_mode_list = []
 class Mode:
     __current_id = itertools.count()
 
-    def __init__(self,name: str, description: str, path_list: list, mode_function):
+    def __init__(self, name: str, description: str, path_list: list, mode_function):
         self.id = next(self.__current_id)
         self.name = name
         self.description = description
