@@ -132,6 +132,10 @@ for mode in modes.global_mode_list:
     if mode.id == mode_id:
         wallpaper_uri = mode.mode_function()
 
+if wallpaper_uri == '':
+    logging.error(f'The mode with id {mode_id} is undefined. Exiting...')
+    sys.exit(1)
+
 #FIXME: Changes both light and dark mode wallpapers, should be changed in the future.
 run_command_with_arg(command_dark, wallpaper_uri)
 run_command_with_arg(command_light, wallpaper_uri)
