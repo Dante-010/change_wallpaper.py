@@ -29,7 +29,7 @@ options:
   - `night/`
 
 Please note that the value of `wallpapers_dir` is located inside `change_wallpaper.config`.
-If the option is not given, its default value is `/home/$USER/Pictures/Wallpapers`
+If the option is not given, its default value is `/home/$USER/Pictures/Wallpapers`.
 
 If you want the script to work properly, you should respect this file structure.
 Inside each folder there should be one or more images (if more than one image is present, a random image is chosen each time).
