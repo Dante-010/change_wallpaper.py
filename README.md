@@ -2,7 +2,7 @@
 ----------
 This is a really small and simple script to automatically change your wallpaper.
 
-## usage
+## Usage
 ```
 usage: change_wallpaper [-h] [-v] [-m ID] [--log LEVEL]
 
@@ -35,7 +35,7 @@ If you want the script to work properly, you should respect this file structure.
 Inside each folder there should be one or more images (if more than one image is present, a random image is chosen each time).
 Just in case, the script ignores other directories inside the ones listed.
 
-## Config, Env, and Log files
+## Config, env, and log files
 - `change_wallpaper.config` contains the following options:
 
 ```
