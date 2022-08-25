@@ -27,7 +27,7 @@ ENV_FILE = Path(PROJECT_DIR, 'env_variables.env')
 default_values_dict = {
     'wallpapers_dir': expandvars('/home/$USER/Pictures/Wallpapers/'), # This should be a str
     'log_file_path': PROJECT_DIR.joinpath('change_wallpaper.log').as_posix(), # This should also be a str
-    'log_level': 'ERROR' # This can be any log level as it's specified in the usage message.
+    'log_level': 'INFO' # This can be any log level as it's specified in the usage message.
 }
 
 # Set up environment variables located inside the 'env_variables.env' file
@@ -109,7 +109,14 @@ if mode_id is None: # Command line option was not given.
 
 mode_id = int(mode_id)
 
-log_level = args.get('log_level')
+log_level = ''
+config_log_level = other_dict.get('default_log_level')
+if config_log_level is not None:
+    log_level = config_log_level
+else:
+    log_level = args.get('log_level')
+
+print(log_level)
 
 # Set up logging
 numeric_level = getattr(logging, log_level.upper(), None)

@@ -49,6 +49,7 @@ command_dark (*)
 
 [Other]
 default_mode_id (*)
+default_log_level
 ```
 
 Options marked with `(*)` are required for the program to function correctly.
