@@ -116,8 +116,6 @@ if config_log_level is not None:
 else:
     log_level = args.get('log_level')
 
-print(log_level)
-
 # Set up logging
 numeric_level = getattr(logging, log_level.upper(), None)
 logging.basicConfig(
