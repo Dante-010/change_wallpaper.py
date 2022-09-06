@@ -68,6 +68,7 @@ This is how my crontab looks like:
 ```
 @hourly /home/dante/scripts/change_wallpaper/change_wallpaper.py
 ```
+(Just in case, note that, among other variables, the `$USER` variable is not set inside cron's environment by default, which may cause some issues)
 ### systemd
 In order to make this service, I followed [this StackExchange answer](https://unix.stackexchange.com/a/492497/448805). The following service runs on wakeup:
 ```
