@@ -27,7 +27,7 @@ ENV_FILE = Path(PROJECT_DIR, 'env_variables.env')
 default_values_dict = {
     'wallpapers_dir': expandvars('/home/$USER/Pictures/Wallpapers/'), # This should be a str
     'log_file_path': PROJECT_DIR.joinpath('change_wallpaper.log').as_posix(), # This should also be a str
-    'log_level': 'INFO' # This can be any log level as it's specified in the usage message.
+    'log_level': 'INFO' # This can be any log level as specified in the usage message.
 }
 
 # Set up environment variables located inside the 'env_variables.env' file
